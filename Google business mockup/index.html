@@ -342,11 +342,10 @@
                                 question.addEventListener('click', () => {
                                     const answer = question.nextElementSibling;
                                     const icon = question.querySelector('.toggle-icon');
-                                    
-                                    // Toggle active class on question
+                                   
                                     question.classList.toggle('active');
                                     
-                                    // Toggle answer visibility
+                                  
                                     if (answer.style.maxHeight) {
                                         answer.style.maxHeight = null;
                                         question.style.borderBottom = '1px solid #dadce0';
@@ -357,7 +356,7 @@
                                 });
                             });
                             
-                            // Add click handler for the See All button
+                          
                             document.querySelector('.see-all-btn').addEventListener('click', function() {
                                 alert('Showing all frequently asked questions');
                             });
